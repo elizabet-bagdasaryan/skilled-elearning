@@ -1,0 +1,255 @@
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+}
+.main {
+  padding: 40px;
+}
+
+.desktop-img {
+  display: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header p {
+  color: #13183f;
+  font-size: 28px;
+  font-weight: 800;
+}
+.header button {
+  border: none;
+  border-radius: 28px;
+  background-color: #13183f;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  height: 50px;
+  padding: 9px 24px;
+  margin-top: 20px;
+}
+
+.introduction h1 {
+  color: #13183f;
+  font-size: 40px;
+  font-weight: 800;
+  width: 400px;
+}
+.introduction p {
+  color: #83869a;
+  font-size: 16px;
+  font-weight: 500;
+  width: 300px;
+  line-height: 26px;
+}
+
+.introduction button {
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  border: none;
+  border-radius: 32px;
+  color: white;
+  font-size: 16px;
+  padding: 15px 38px;
+  font-weight: 600;
+}
+
+.mobile-img {
+  height: 330px;
+  width: 330px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.check-out-div {
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  color: white;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 5px 15px 10px 30px;
+  margin-bottom: 50px;
+}
+.check-out-div p {
+  width: 280px;
+  line-height: 32px;
+}
+
+.sections {
+  border-radius: 10px;
+  background-color: white;
+  padding: 16px 28px 12px 28px;
+  margin-bottom: 40px;
+}
+.sections h3 {
+  color: #13183f;
+  font-size: 20px;
+}
+.sections h5 {
+  color: #f74780;
+  font-size: 18px;
+}
+
+.sections p {
+  color: #83869a;
+  font-size: 16px;
+}
+
+.sections img {
+  margin-top: -50px;
+}
+
+footer {
+  background-color: #13183f;
+  display: flex;
+  padding: 0 16px;
+  justify-content: space-between;
+}
+footer button {
+  color: white;
+  border: none;
+  border-radius: 28px;
+  background: linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
+  height: 50px;
+  font-size: 16px;
+  margin-top: 25px;
+  font-weight: 600;
+  padding: 9px 24px;
+}
+footer p {
+  color: white;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+@media screen and (min-width: 768px) {
+  .all-sections {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-template-areas:
+      "check-out-div animation"
+      "design photography"
+      "crypto business";
+  }
+  .check-out-div {
+    grid-area: check-out-div;
+  }
+  #animation {
+    grid-area: animation;
+  }
+  #design {
+    grid-area: design;
+  }
+  #photography {
+    grid-area: photography;
+  }
+  #crypto {
+    grid-area: crypto;
+  }
+  #business {
+    grid-area: business;
+  }
+  .upper-section {
+    display: flex;
+    justify-content: space-between;
+  }
+  .mobile-img {
+    display: none;
+  }
+  .desktop-img {
+    display: block;
+    height: 400px;
+    width: 400px;
+    margin-top: -50px;
+    margin-right: -45px;
+  }
+  .main {
+    padding: 40px;
+  }
+}
+
+@media screen and (min-width: 1336px) {
+  .all-sections {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px 10px;
+    grid-template-areas:
+      "check-out-div animation design"
+      "photography crypto business";
+    margin-top: 50px;
+  }
+  .main {
+    padding: 0 150px;
+  }
+  .check-out-div {
+    grid-area: check-out-div;
+
+    width: 280px;
+  }
+  #animation {
+    grid-area: animation;
+  }
+  #photography {
+    grid-area: photography;
+  }
+  #crypto {
+    grid-area: crypto;
+  }
+  #design {
+    grid-area: design;
+  }
+  #business {
+    grid-area: business;
+  }
+  .sections {
+    width: 280px;
+  }
+  .desktop-img {
+    height: 500px;
+    width: 450px;
+    margin-right: -150px;
+    margin-top: -50px;
+  }
+  .introduction {
+    width: 46%;
+  }
+  .introduction button {
+    margin-top: 30px;
+    cursor: pointer;
+  }
+  .introduction button:hover {
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  }
+
+  footer button:hover {
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
+    cursor: pointer;
+  }
+  .header button:hover {
+    background: #666ca3;
+    cursor: pointer;
+  }
+  footer {
+    margin-top: 80px;
+  }
+}
